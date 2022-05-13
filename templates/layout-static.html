@@ -1,0 +1,45 @@
+{% extends 'index.html' %}
+{% block title %} <title>Debugging information</title>{% endblock %}
+{% block dashboard %}{% endblock %}
+    {% block information %}
+        <main>
+            <div class="container-fluid px-4">
+                <h1 class="mt-4">Advanced Panel</h1>
+                <ol class="breadcrumb mb-4">
+                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                    <li class="breadcrumb-item active">Debugging information</li>
+                </ol>
+                <div class="card mb-4">
+                    <h4 class="card-title text-center">Debugging information</h4>
+                    <div class="card-body">
+                        <p class="card-text">Account no : A2023nfs</p>
+                        <p class="card-text">Last packet  : {{ reading }}</p>
+                        <p class="card-text">User : {{ user }}</p>
+                        <p class="card-text ">Public Key :</p>
+                        <p class="card-text ">
+                            -----BEGIN RSA PUBLIC KEY-----
+                            <br>
+                            <br>
+                            MIHGAoG+DjzCX5zXoGyRz4kX1aHwydMj5DjOVA9iQR+Ea7ylJPIMnI1jtXHa0M4B
+                            HYXOjnRTxVavZqFnjmWBus+OEyAS7Y2aaK0/0br2cJ3Qttd93HWxrCyxGYMK9rRm
+                            npVi+Y7dwc4WPHiOHahN7nnDS+oS4BlTzIE5R+n8zlNYXdvLDEr/XoxiYNFdbux3
+                            BdIOoWnYQmi7ZYBpkv/SEW26gx3TqKvWNsv2NHM7Kmqj4o7mwwQ7e+jjoAO+tJAo
+                            kTdLIQIDAQAB
+                            <br>
+                            <br>
+                            -----END RSA PUBLIC KEY-----
+                            </p>
+                    </div>
+                </div>
+                <img class="img-fluid rounded mx-auto d-block" src="static/QR.png">
+
+                </main>
+
+                {% endblock %}
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="../static/js/scripts.js"></script>
+
+
